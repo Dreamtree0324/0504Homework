@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'RixGo B';
+    text-decoration: none;
+    color:#fff;
+}
+
+#firstSection{
+    height: 975px;
+    background: url(../images/visualBG.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#header{
+    height: 75px;
+    background-color:rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+#header > .menu{
+    float: right;
+}
+
+#header > .menu > ul{
+    list-style: none;
+}
+
+#header > .menu > ul > li{
+    float:left;
+}
+
+#header > .menu > ul > li > a{
+    font-size:18px;
+    font-weight: bold;
+    display:block;
+    width:100px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    transition: all 0.6s;
+}
+
+#header > .menu > ul > li > a:hover{
+    background-color:rgba(255,255,255,0.8);
+    color: #000;
+}
+
+#visual{
+    height: 900px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visual > .title{
+    font-size: 46px;
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    color:rgba(255,255,255,0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#skills{
+    display:flex;
+    flex-direction: column;
+    height: 975px;
+    background:url(../images/pattern.png);
+    justify-content: center;
+    align-items: center;
+}
+
+#skills > .title{
+    text-align: center;
+}
+
+#skills > .title > h2 {
+    width:250px;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 10px;
+    font-size: 2rem;
+    color:#000;
+    background-color: #fff;
+    font-size: 2rem;
+    color:#000;
+    margin-bottom:20px;
+}
+
+#skills > .skillList{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 400px;
+    grid-row-gap: 50px;
+}
+
+#skills > .skillList > .card{
+    background-color: #fff;
+    width:400px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+#skills > .skillList > .card > .canvas-container{
+    width:  100%;
+    height: 300px;
+}
+
+#skills > .skillList > .card > .canvas-container > canvas{
+    width: 300px;
+    height: 100%;
+}
+
+#skills > .skillList > .card > .info{
+    margin-top:40px;
+}
+
+#skills > .skillList > .card > .info > p{
+    font-size: 1.3rem;
+    color:#000;
+}
+
+#content{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    height: 900px;
+    background:url(../images/pattern.png);
+}
+
+#content > .title{
+    margin-top:30px;
+    text-align: center;
+}
+
+#content > .title > h2{
+    width:250px;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 10px;
+    font-size: 2rem;
+    color:#000;
+    background-color: #fff;
+}
+
+#content > .contentList{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 400px;
+    grid-row-gap: 50px;
+    margin-top:85px;
+}
+
+#content > .contentList > .contentCard{
+    width:  300px;
+    height: 300px;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    transition: all 0.5s;
+}
+
+#content > .contentList > .contentCard:hover{
+    transform: scale(1.1);
+}
+
+.contentCard > .cc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 80%;
+}
+
+.contentCard >.cc > p{
+    color:#000;
+    font-size:1.3rem;
+}
+
+.contentCard > .name{
+    width:100%;
+    height: 20%;
+    background-color: #212121;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content > .contentList > .contentCard > .name > p{
+    color:#bbb;
+}
+
+#content > .contentList > .contentCard > .name > p:first-child{
+    color:#fff;
+}
+
+#footer{
+    text-align: center;
+    height: 75px;
+    line-height: 75px;
+    background-color: #999;
+}
+
+.btnTop{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    width:75px;
+    height: 75px;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #fff;
+    right:40px;
+    bottom:50px;
+}
+
+.btnTop > p{
+    font-size:1.3rem;
+    color:#000;
+}
