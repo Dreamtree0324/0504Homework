@@ -5,6 +5,7 @@
     font-family: 'RixGo B';
     text-decoration: none;
     color:#fff;
+    user-select: none;
 }
 
 #firstSection{
@@ -225,6 +226,7 @@
     background-color: #fff;
     right:40px;
     bottom:50px;
+    transition: all 0.5s;
 }
 
 .btnTop > p{
